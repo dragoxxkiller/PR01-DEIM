@@ -18,24 +18,13 @@ public class CuboPract1 : MonoBehaviour
     void Start()
     {
 
-       while (m < 20)
+        while (n != 5 )
         {
-            m++;
-            print(m);
-            if(m == 20)
-            {
-                print(mensaje);
-            }
+            n = Random.Range(-2000,2000);
+            print(n);
+        }
 
-        }
-        for (k = 14; k <= 69; k++) 
-        {
-            print(k);
-            if (k == 69)
-            {
-                print(mensaje2);
-            }
-        }
+      
     }
 
     // Update is called once per frame
