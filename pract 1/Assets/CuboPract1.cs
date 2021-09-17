@@ -10,24 +10,32 @@ public class CuboPract1 : MonoBehaviour
     public int numerito = 20;
     public float numero = 1.23f;
     public bool Alive = true;
-
-
+     int n = 0;
+    int m = 10;
+    int k;
 
     // Start is called before the first frame update
     void Start()
     {
 
 
-        print(mensaje + mensaje2);
-        print(mensaje);
-        print(Alive);
-        print(numero);
-        print(numerito);
     }
 
     // Update is called once per frame
     void Update()
     {
+        n++;
+        if(n <= 10)
+        {
+
+            print(n);
+
+
+         }
+
         
+        
+
+
     }
 }
