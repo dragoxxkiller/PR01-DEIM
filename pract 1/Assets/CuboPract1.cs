@@ -12,26 +12,36 @@ public class CuboPract1 : MonoBehaviour
     public bool Alive = true;
      int n = 0;
     int m = 10;
-    int k;
+    int k = 14;
 
     // Start is called before the first frame update
     void Start()
     {
 
+       while (m < 20)
+        {
+            m++;
+            print(m);
+            if(m == 20)
+            {
+                print(mensaje);
+            }
 
+        }
+        for (k = 14; k <= 69; k++) 
+        {
+            print(k);
+            if (k == 69)
+            {
+                print(mensaje2);
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        n++;
-        if(n <= 10)
-        {
-
-            print(n);
-
-
-         }
+       
 
         
         
