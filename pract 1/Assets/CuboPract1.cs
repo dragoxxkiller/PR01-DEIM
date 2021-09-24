@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CuboPract1 : MonoBehaviour
 {
@@ -11,11 +12,11 @@ public class CuboPract1 : MonoBehaviour
     public int numerito = 20;
     public float numero = 1.23f;
     public bool Alive = true;
-     int n = 2;
-    int m = 10;
-    int k = 14;
+    int n = 0;
+    int m = 0;
+    int k = 0;
     string Saludo;
-    
+    public Text timer;
 
         int multiplicar (int n , int m)
         {
@@ -30,26 +31,40 @@ public class CuboPract1 : MonoBehaviour
         print("holiwi" + hola);
     }
 
+    IEnumerator contador()
+    {
+        while (true)
+        {
+            print("la hora es" + n + ":" + m + ":" + k);
+
+            timer.text = "la hora es" + n + ":" + m + ":" + k;
+            k++;
+            yield return new WaitForSeconds(1f);
+
+            if (k == 60)
+            {
+                k = 0;
+                m++;
+
+            }
+
+            if (m == 60)
+            {
+                n++;
+            }
+        }
+    }
+
 
 
     // Start is called before the first frame update
     void Start()
     {
 
-       int resultado = multiplicar(2, 20);
-        print(resultado);
 
-        if (resultado != 20)
-        {
-            bool Alive = false;
-            print(Alive);
+        StartCoroutine("contador");
 
-        }
-
-
-        Saludito("Eustaquio");
-
-
+        
 
 
 
