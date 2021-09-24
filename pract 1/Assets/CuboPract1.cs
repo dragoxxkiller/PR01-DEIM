@@ -52,6 +52,11 @@ public class CuboPract1 : MonoBehaviour
             {
                 n++;
             }
+            if (n == 1)
+            {
+                StopCoroutine("contador");
+            }
+
         }
     }
 
