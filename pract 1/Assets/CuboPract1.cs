@@ -15,9 +15,20 @@ public class CuboPract1 : MonoBehaviour
     int m = 10;
     int k = 14;
     string Saludo;
+    
 
+        int multiplicar (int n , int m)
+        {
 
+            int resultado = n * m;
+            return resultado;
+            
+        }
 
+    void Saludito (string hola)
+    {
+        print("holiwi" + hola);
+    }
 
 
 
@@ -25,10 +36,26 @@ public class CuboPract1 : MonoBehaviour
     void Start()
     {
 
-        int resultado = multiplicar(2, 20);
+       int resultado = multiplicar(2, 20);
         print(resultado);
-       
-        
+
+        if (resultado != 20)
+        {
+            bool Alive = false;
+            print(Alive);
+
+        }
+
+
+        Saludito("Eustaquio");
+
+
+
+
+
+
+
+
 
       
     }
